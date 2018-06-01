@@ -3,7 +3,7 @@
 <div class="container">
   <h3>Mylist</h3>
 <div class="row">
-  <div class="col-xs-12" *ngFor = "let movie of myList; let index = index">
+  <div class="col-xs-4" *ngFor = "let movie of myList; let index = index">
       <div class="card" (mouseenter)="mouseenter(index)" (mouseleave)="mouseleave(index)">
           <img class="card-img-top img-responsive" [src]="movie.img" alt="Card image">
           <div class="card-body">
@@ -19,7 +19,7 @@
 <hr>
 <h3>Recommendations</h3>
 <div class="row">
-  <div class="col-xs-12" *ngFor="let rec of recommendation; let value = index">
+  <div class="col-xs-4" *ngFor="let rec of recommendation; let value = index">
       <div class="card" (mouseenter)="onmouseenter(value)" (mouseleave)="onmouseleave(value)">
           <img class="card-img-top img-responsive" [src]="rec.img" alt="Card image">
           <div class="card-body">
